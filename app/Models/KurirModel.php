@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class KurirModel extends Model
+{
+    protected $table         = 'kurir';
+    protected $primaryKey    = 'id_kurir';
+    protected $returnType    = 'array';
+    protected $allowedFields = ['nama', 'no_hp', 'status', 'email', 'password'];
+}
